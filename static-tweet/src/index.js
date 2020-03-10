@@ -115,7 +115,7 @@ var testTweet = {
 
 ReactDOM.render(<Tweet tweet={testTweet} />, document.querySelector('#root'));
 
-
+/****       PROP TYPES  ****/
 // function Comment({ author, message, likes }) {
 //     return (
 //         <div>
@@ -135,3 +135,15 @@ ReactDOM.render(<Tweet tweet={testTweet} />, document.querySelector('#root'));
 // }
 
 // ReactDOM.render(<Comment author='mevin' message='how are you' likes={1} />, document.querySelector('#root'));
+
+/****   CHILDREN        ****/
+// function IconButton({ children }) {
+//     return (
+//         <button>
+//             <i class="target-icon" />
+//             {children}
+//         </button>
+//     );
+// }
+
+// ReactDOM.render(<IconButton>Do The Thing</IconButton>, document.querySelector('#root'));
