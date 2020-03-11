@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.file-list {
+  font-family: Helvetica, sans-serif;
+  margin-top: 10px;
+  width: 980px;
+  color: #333;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.file-list td {
+  border-top: 1px solid #ccc;
+}
+
+.file-name {
+  padding: 4px;
+  max-width: 180px;
+}
+
+.file-icon {
+  width: 17px;
+  padding-left: 4px;
+}
+
+.file-icon .fa-folder {
+  color: #508FCA;
+}
+
+.commit-message {
+  max-width: 442px;
+  padding-left: 10px;
+  overflow: hidden;
+}
