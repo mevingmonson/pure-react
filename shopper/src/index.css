@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  background-color: red;
+  width: 600px;
+}
+
+.sidebar {
+  margin: 10px;
+  background-color: aqua;
+}
+
+.content {
+  margin: 10px;
+  background-color: yellow;
+}
+
+button {
+  margin: 10px;
+}
