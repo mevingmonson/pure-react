@@ -1,19 +1,50 @@
-.layout {
-  display: flex;
-  background-color: red;
-  width: 600px;
+.app {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.sidebar {
-  margin: 10px;
-  background-color: aqua;
+.app-nav {
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #508FCA;
 }
 
-.content {
-  margin: 10px;
-  background-color: yellow;
+.app-nav ul {
+  padding: 0;
+  margin: 0;
 }
 
-button {
-  margin: 10px;
+.app-nav-item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 24px;
+  border-bottom: 4px solid transparent;
+}
+
+.app-content {
+  margin: 0 20px;
+}
+
+.app-nav-item a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-nav-item a:hover {
+  color: #999;
+}
+
+.app-nav-item.selected {
+  border-bottom-color: #FFAA3F;
+}
+
+.item-page-items {
+  margin: 0;
+  padding: 0;
+}
+
+.item-page-items li {
+  list-style: none;
+  margin-bottom: 20px;
 }
