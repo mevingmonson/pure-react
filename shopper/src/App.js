@@ -64,9 +64,20 @@ export default class App extends Component {
     });
     console.log(cartItems)
 
-    return (
-      <CartPage items={cartItems} onAddOne={this.handleAddToCart} onRemoveOne={this.handleRemoveOne} />
-    );
+    let totalPrice = cartItems.reduce((totalPrice, cartItem) => {
+      totalPrice += cartItem.count * cartItem.price;
+      return totalPrice
+    }, 0);
+    console.log(totalPrice);
+
+    if (this.state.cart.length !== 0)
+      return (
+        <CartPage items={cartItems} onAddOne={this.handleAddToCart} onRemoveOne={this.handleRemoveOne}>
+          <h2>Total Price: {totalPrice}</h2>
+        </CartPage>
+      )
+    else
+      return `There are no items in the cart`
   }
 
 

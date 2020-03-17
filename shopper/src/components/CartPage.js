@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Item from '../Item'
 
-function CartPage({ items, onAddOne, onRemoveOne }) {
+function CartPage({ items, onAddOne, onRemoveOne, children }) {
     return (
         <ul className="cartpage-items">
             {
@@ -21,6 +21,7 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
                         </Item>
                     </li>)
             }
+            {children}
         </ul>
     )
 }
